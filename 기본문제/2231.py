@@ -1,3 +1,5 @@
+#피드백: while문을 이용하면 깨끗한 코드를 짤 수 있음. 지금은 너무 더티코드ㅎㅋ
+
 n = int(input())
 cnt = 0
 for i in range(1,n):
