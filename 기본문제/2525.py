@@ -10,6 +10,7 @@
 
 #피드백: 조건문 문제이지만 조건문 없이도 풀 수 있으니 시도 해보기
 
+"""
 t = input()
 h = int(t.split(" ")[0])
 m = int(t.split(" ")[1])
@@ -26,4 +27,19 @@ if h >= 24:
     h = h % 24
 
 print("%d %d" %(h,m))
+"""
 
+#피드백 반영
+#현재 시 분/조리시간(분) 입력 -> 현재 분 += 조리시간(분) -> 시 = (시 + 분//60) % 24 -> 분 = 분 % 60
+
+t = input().split()
+h = int(t[0])
+m = int(t[1])
+
+cookTime = int(input())
+
+m += cookTime
+h = (h + m // 60) % 24
+m = m % 60
+
+print(h,m)
