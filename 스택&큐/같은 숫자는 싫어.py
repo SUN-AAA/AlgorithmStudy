@@ -9,6 +9,7 @@ def solution(arr):
     
     return answer
 
+#테스트
 arr1 = [1,1,3,3,0,1,1]
 ans1 = solution(arr1)
 print(ans1)
